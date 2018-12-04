@@ -20,9 +20,8 @@ if __name__ == "__main__":
 	f = open(filename)
 	data = f.readlines()
 
-	'''
 	# ========= Part 1 ==========
-	cloth = [[0 for col in range(10000)] for row in range(10000)]
+	cloth = [[0 for col in range(1000)] for row in range(1000)]
 	overlap = 0
 	for claim in data:
 		arguments = extractArg(claim)
@@ -38,7 +37,6 @@ if __name__ == "__main__":
 					overlap += 1
 				cloth[topleftX + x][topleftY + y] += 1
 	print("Part 1: " + str(overlap))
-	'''
 
 	# ========= Part 2 ==========
 	cloth = [[0 for col in range(1000)] for row in range(1000)]
